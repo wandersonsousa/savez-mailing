@@ -64,6 +64,7 @@ const UserDropdown = () => {
       color: 'text.secondary'
     }
   }
+  const { user } = useUser()
 
   return (
     <Fragment>
@@ -74,7 +75,12 @@ const UserDropdown = () => {
         badgeContent={<BadgeContentSpan />}
         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
       >
-        <Avatar alt='Usuário' onClick={handleDropdownOpen} sx={{ width: 40, height: 40 }} src='/images/avatars/1.png' />
+        <Avatar
+          alt={user?.name}
+          onClick={handleDropdownOpen}
+          sx={{ width: 40, height: 40 }}
+          src='/images/avatars/1.png'
+        />
       </Badge>
       <Menu
         anchorEl={anchorEl}
@@ -94,9 +100,9 @@ const UserDropdown = () => {
               <Avatar alt='Usuário' src='/images/avatars/1.png' sx={{ width: '2.5rem', height: '2.5rem' }} />
             </Badge>
             <Box sx={{ display: 'flex', marginLeft: 3, alignItems: 'flex-start', flexDirection: 'column' }}>
-              <Typography sx={{ fontWeight: 600 }}>Usuário</Typography>
+              <Typography sx={{ fontWeight: 600, textTransform: 'capitalize' }}>{user?.name}</Typography>
               <Typography variant='body2' sx={{ fontSize: '0.8rem', color: 'text.disabled' }}>
-                Admin
+                {user?.email}
               </Typography>
             </Box>
           </Box>

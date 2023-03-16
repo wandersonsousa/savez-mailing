@@ -20,14 +20,14 @@ import { getFirestore } from 'firebase/firestore'
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  databaseURL: 'https://lista-ninja-d15d6.firebaseio.com',
-  apiKey: 'AIzaSyC2Zug0QLQk5gD6zegdvcxO4_WSx4TsRHc',
-  authDomain: 'lista-ninja-d15d6.firebaseapp.com',
-  projectId: 'lista-ninja-d15d6',
-  storageBucket: 'lista-ninja-d15d6.appspot.com',
-  messagingSenderId: '714139486371',
-  appId: '1:714139486371:web:0c5122829bf4c5f7ebd716',
-  measurementId: 'G-Y3GSJWCH5S'
+  databaseURL: 'https://savez-mailing.firebaseio.com',
+  apiKey: 'AIzaSyDIFQPOs6_IJFO92reRQVCbbWLnQjY_6Eo',
+  authDomain: 'savez-mailing.firebaseapp.com',
+  projectId: 'savez-mailing',
+  storageBucket: 'savez-mailing.appspot.com',
+  messagingSenderId: '873309568749',
+  appId: '1:873309568749:web:57a213489ab3e843e356e4',
+  measurementId: 'G-GLDKY6M7RX'
 }
 
 const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app()
