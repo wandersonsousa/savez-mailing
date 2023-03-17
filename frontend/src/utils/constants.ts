@@ -1,6 +1,7 @@
 import { FieldOptions } from 'src/types/form'
 
 export const SITE_NAME = 'Savez Mailing'
+export const WHATSAPP_LINK = 'https://api.whatsapp.com/send/?phone=551199999999&text&type=phone_number&app_absent=0'
 
 const YesOrNoOptions = [
   {
