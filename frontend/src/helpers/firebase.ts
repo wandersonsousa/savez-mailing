@@ -18,18 +18,15 @@ import { getPerformance } from 'firebase/performance'
 import { getAnalytics } from 'firebase/analytics'
 import { getFirestore } from 'firebase/firestore'
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  databaseURL: 'https://savez-mailing.firebaseio.com',
-  apiKey: 'AIzaSyDIFQPOs6_IJFO92reRQVCbbWLnQjY_6Eo',
-  authDomain: 'savez-mailing.firebaseapp.com',
-  projectId: 'savez-mailing',
-  storageBucket: 'savez-mailing.appspot.com',
-  messagingSenderId: '873309568749',
-  appId: '1:873309568749:web:57a213489ab3e843e356e4',
-  measurementId: 'G-GLDKY6M7RX'
-}
-
+  apiKey: "AIzaSyDIFQPOs6_IJFO92reRQVCbbWLnQjY_6Eo",
+  authDomain: "savez-mailing.firebaseapp.com",
+  projectId: "savez-mailing",
+  storageBucket: "savez-mailing.appspot.com",
+  messagingSenderId: "873309568749",
+  appId: "1:873309568749:web:57a213489ab3e843e356e4",
+  measurementId: "G-GLDKY6M7RX"
+};
 const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app()
 let analytics_temp
 let performance_temp
@@ -39,7 +36,7 @@ if (typeof window !== 'undefined') {
   performance_temp = getPerformance(app)
 }
 
-export const storageKey = 'pjhelp-321c0-local-storage-231901211'
+export const storageKey = 'savez-321c0-local-storage-231901211'
 export const analytics = analytics_temp
 export const performance = performance_temp
 export const signInWithEmail = signInWithEmailAndPassword
